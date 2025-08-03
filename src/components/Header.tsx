@@ -98,10 +98,12 @@ const Header = () => {
 
           {/* Right side icons */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="hidden sm:flex">
-              <User className="h-4 w-4" />
-              <span className="ml-2 font-medium">Sign In</span>
-            </Button>
+            <Link to="/auth">
+              <Button variant="ghost" size="sm" className="hidden sm:flex">
+                <User className="h-4 w-4" />
+                <span className="ml-2 font-medium">Sign In</span>
+              </Button>
+            </Link>
             
             <Button variant="ghost" size="sm" className="relative">
               <ShoppingBag className="h-4 w-4" />
