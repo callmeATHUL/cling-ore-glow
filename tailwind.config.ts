@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'serif': ['Playfair Display', 'serif'],
+				'sans': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -42,7 +46,16 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
+					rose: 'hsl(var(--accent-rose))',
+					cream: 'hsl(var(--accent-cream))',
+					sage: 'hsl(var(--accent-sage))',
+					earth: 'hsl(var(--accent-earth))',
+					linen: 'hsl(var(--accent-linen))',
+					espresso: 'hsl(var(--accent-espresso))',
+					gold: 'hsl(var(--accent-gold))',
+					taupe: 'hsl(var(--accent-taupe))',
+					pearl: 'hsl(var(--accent-pearl))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',

@@ -8,35 +8,65 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* CLING & ORE Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 26 20% 36%; /* Dark brown */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 26 20% 36%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 26 20% 36%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Dusty Rose #C7A193 */
+    --primary: 18 29% 68%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Warm Ochre #D5A86F */
+    --secondary: 32 58% 63%;
+    --secondary-foreground: 26 20% 36%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent colors from brand palette */
+    --accent-rose: 18 31% 63%; /* #B78F7D */
+    --accent-cream: 30 36% 77%; /* #D9C0B0 */
+    --accent-sage: 44 15% 63%; /* #B6A78B */
+    --accent-earth: 35 19% 43%; /* #7A715F */
+    --accent-linen: 36 29% 86%; /* #DED7CB */
+    --accent-espresso: 19 29% 28%; /* #5B3F33 */
+    --accent-gold: 35 55% 59%; /* #D4A156 */
+    --accent-taupe: 21 20% 58%; /* #B08A78 */
+    --accent-pearl: 36 32% 88%; /* #E9DED1 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 36 29% 86%;
+    --muted-foreground: 35 19% 43%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 30 36% 77%;
+    --accent-foreground: 26 20% 36%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 30 36% 90%;
+    --input: 30 36% 90%;
+    --ring: 18 29% 68%;
+
+    --radius: 0.75rem;
+
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--accent-pearl)), hsl(var(--accent-cream)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent-pearl)));
+
+    /* Elegant shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+    --shadow-product: 0 8px 25px -8px hsl(var(--primary) / 0.15);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
